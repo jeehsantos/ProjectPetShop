@@ -65,6 +65,8 @@ namespace ProjectPetShop
             this.clienteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.btnCancel = new System.Windows.Forms.ToolStripButton();
             this.btnEdit = new System.Windows.Forms.ToolStripButton();
+            this.btnFoto = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             cli_codigoLabel = new System.Windows.Forms.Label();
             cli_nomeLabel = new System.Windows.Forms.Label();
             cli_celularLabel = new System.Windows.Forms.Label();
@@ -85,7 +87,7 @@ namespace ProjectPetShop
             cli_codigoLabel.AutoSize = true;
             cli_codigoLabel.Location = new System.Drawing.Point(79, 77);
             cli_codigoLabel.Name = "cli_codigoLabel";
-            cli_codigoLabel.Size = new System.Drawing.Size(116, 24);
+            cli_codigoLabel.Size = new System.Drawing.Size(103, 22);
             cli_codigoLabel.TabIndex = 0;
             cli_codigoLabel.Text = "cli codigo:";
             // 
@@ -94,7 +96,7 @@ namespace ProjectPetShop
             cli_nomeLabel.AutoSize = true;
             cli_nomeLabel.Location = new System.Drawing.Point(79, 107);
             cli_nomeLabel.Name = "cli_nomeLabel";
-            cli_nomeLabel.Size = new System.Drawing.Size(105, 24);
+            cli_nomeLabel.Size = new System.Drawing.Size(91, 22);
             cli_nomeLabel.TabIndex = 2;
             cli_nomeLabel.Text = "cli nome:";
             // 
@@ -103,7 +105,7 @@ namespace ProjectPetShop
             cli_celularLabel.AutoSize = true;
             cli_celularLabel.Location = new System.Drawing.Point(79, 146);
             cli_celularLabel.Name = "cli_celularLabel";
-            cli_celularLabel.Size = new System.Drawing.Size(114, 24);
+            cli_celularLabel.Size = new System.Drawing.Size(99, 22);
             cli_celularLabel.TabIndex = 4;
             cli_celularLabel.Text = "cli celular:";
             // 
@@ -112,7 +114,7 @@ namespace ProjectPetShop
             cli_emailLabel.AutoSize = true;
             cli_emailLabel.Location = new System.Drawing.Point(79, 185);
             cli_emailLabel.Name = "cli_emailLabel";
-            cli_emailLabel.Size = new System.Drawing.Size(100, 24);
+            cli_emailLabel.Size = new System.Drawing.Size(86, 22);
             cli_emailLabel.TabIndex = 6;
             cli_emailLabel.Text = "cli email:";
             // 
@@ -121,7 +123,7 @@ namespace ProjectPetShop
             cli_cpfLabel.AutoSize = true;
             cli_cpfLabel.Location = new System.Drawing.Point(79, 224);
             cli_cpfLabel.Name = "cli_cpfLabel";
-            cli_cpfLabel.Size = new System.Drawing.Size(78, 24);
+            cli_cpfLabel.Size = new System.Drawing.Size(69, 22);
             cli_cpfLabel.TabIndex = 8;
             cli_cpfLabel.Text = "cli cpf:";
             // 
@@ -130,7 +132,7 @@ namespace ProjectPetShop
             cli_enderecoLabel.AutoSize = true;
             cli_enderecoLabel.Location = new System.Drawing.Point(79, 263);
             cli_enderecoLabel.Name = "cli_enderecoLabel";
-            cli_enderecoLabel.Size = new System.Drawing.Size(146, 24);
+            cli_enderecoLabel.Size = new System.Drawing.Size(129, 22);
             cli_enderecoLabel.TabIndex = 10;
             cli_enderecoLabel.Text = "cli endereco:";
             // 
@@ -139,12 +141,13 @@ namespace ProjectPetShop
             cli_fotoLabel.AutoSize = true;
             cli_fotoLabel.Location = new System.Drawing.Point(79, 299);
             cli_fotoLabel.Name = "cli_fotoLabel";
-            cli_fotoLabel.Size = new System.Drawing.Size(85, 24);
+            cli_fotoLabel.Size = new System.Drawing.Size(75, 22);
             cli_fotoLabel.TabIndex = 12;
             cli_fotoLabel.Text = "cli foto:";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnFoto);
             this.groupBox1.Controls.Add(cli_codigoLabel);
             this.groupBox1.Controls.Add(this.cli_codigoLabel1);
             this.groupBox1.Controls.Add(cli_nomeLabel);
@@ -160,10 +163,10 @@ namespace ProjectPetShop
             this.groupBox1.Controls.Add(cli_fotoLabel);
             this.groupBox1.Controls.Add(this.cli_fotoPictureBox);
             this.groupBox1.Enabled = false;
-            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(37, 38);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(63, 52);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(658, 434);
+            this.groupBox1.Size = new System.Drawing.Size(594, 466);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Client Data:";
@@ -193,7 +196,7 @@ namespace ProjectPetShop
             this.cli_nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "cli_nome", true));
             this.cli_nomeTextBox.Location = new System.Drawing.Point(231, 104);
             this.cli_nomeTextBox.Name = "cli_nomeTextBox";
-            this.cli_nomeTextBox.Size = new System.Drawing.Size(350, 33);
+            this.cli_nomeTextBox.Size = new System.Drawing.Size(350, 31);
             this.cli_nomeTextBox.TabIndex = 3;
             // 
             // cli_celularMaskedTextBox
@@ -202,7 +205,7 @@ namespace ProjectPetShop
             this.cli_celularMaskedTextBox.Location = new System.Drawing.Point(231, 143);
             this.cli_celularMaskedTextBox.Mask = "(99) 99999-9999";
             this.cli_celularMaskedTextBox.Name = "cli_celularMaskedTextBox";
-            this.cli_celularMaskedTextBox.Size = new System.Drawing.Size(172, 33);
+            this.cli_celularMaskedTextBox.Size = new System.Drawing.Size(172, 31);
             this.cli_celularMaskedTextBox.TabIndex = 5;
             // 
             // cli_emailTextBox
@@ -210,7 +213,7 @@ namespace ProjectPetShop
             this.cli_emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "cli_email", true));
             this.cli_emailTextBox.Location = new System.Drawing.Point(231, 182);
             this.cli_emailTextBox.Name = "cli_emailTextBox";
-            this.cli_emailTextBox.Size = new System.Drawing.Size(350, 33);
+            this.cli_emailTextBox.Size = new System.Drawing.Size(350, 31);
             this.cli_emailTextBox.TabIndex = 7;
             // 
             // cli_cpfMaskedTextBox
@@ -219,7 +222,7 @@ namespace ProjectPetShop
             this.cli_cpfMaskedTextBox.Location = new System.Drawing.Point(231, 221);
             this.cli_cpfMaskedTextBox.Mask = "999.999.999-99";
             this.cli_cpfMaskedTextBox.Name = "cli_cpfMaskedTextBox";
-            this.cli_cpfMaskedTextBox.Size = new System.Drawing.Size(155, 33);
+            this.cli_cpfMaskedTextBox.Size = new System.Drawing.Size(155, 31);
             this.cli_cpfMaskedTextBox.TabIndex = 9;
             // 
             // cli_enderecoTextBox
@@ -227,7 +230,7 @@ namespace ProjectPetShop
             this.cli_enderecoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "cli_endereco", true));
             this.cli_enderecoTextBox.Location = new System.Drawing.Point(231, 260);
             this.cli_enderecoTextBox.Name = "cli_enderecoTextBox";
-            this.cli_enderecoTextBox.Size = new System.Drawing.Size(350, 33);
+            this.cli_enderecoTextBox.Size = new System.Drawing.Size(350, 31);
             this.cli_enderecoTextBox.TabIndex = 11;
             // 
             // cli_fotoPictureBox
@@ -235,7 +238,8 @@ namespace ProjectPetShop
             this.cli_fotoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.clienteBindingSource, "cli_foto", true));
             this.cli_fotoPictureBox.Location = new System.Drawing.Point(231, 299);
             this.cli_fotoPictureBox.Name = "cli_fotoPictureBox";
-            this.cli_fotoPictureBox.Size = new System.Drawing.Size(172, 135);
+            this.cli_fotoPictureBox.Size = new System.Drawing.Size(122, 135);
+            this.cli_fotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cli_fotoPictureBox.TabIndex = 13;
             this.cli_fotoPictureBox.TabStop = false;
             // 
@@ -283,7 +287,7 @@ namespace ProjectPetShop
             this.clienteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.clienteBindingNavigator.Name = "clienteBindingNavigator";
             this.clienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clienteBindingNavigator.Size = new System.Drawing.Size(746, 39);
+            this.clienteBindingNavigator.Size = new System.Drawing.Size(743, 39);
             this.clienteBindingNavigator.TabIndex = 1;
             this.clienteBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -402,12 +406,29 @@ namespace ProjectPetShop
             this.btnEdit.Text = "Edit";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // btnFoto
+            // 
+            this.btnFoto.BackColor = System.Drawing.Color.Gold;
+            this.btnFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFoto.Location = new System.Drawing.Point(359, 308);
+            this.btnFoto.Name = "btnFoto";
+            this.btnFoto.Size = new System.Drawing.Size(94, 31);
+            this.btnFoto.TabIndex = 14;
+            this.btnFoto.Text = "button1";
+            this.btnFoto.UseVisualStyleBackColor = false;
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Title = "Choose a client photo";
+            // 
             // fmRegClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(746, 514);
+            this.ClientSize = new System.Drawing.Size(743, 530);
             this.Controls.Add(this.clienteBindingNavigator);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -456,5 +477,7 @@ namespace ProjectPetShop
         private System.Windows.Forms.PictureBox cli_fotoPictureBox;
         private System.Windows.Forms.ToolStripButton btnCancel;
         private System.Windows.Forms.ToolStripButton btnEdit;
+        private System.Windows.Forms.Button btnFoto;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

@@ -16,7 +16,7 @@ namespace ProjectPetShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fmRegClient());
+            Application.Run(new Form1());
         }
     }
 }

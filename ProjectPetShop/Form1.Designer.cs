@@ -51,9 +51,10 @@ namespace ProjectPetShop
             this.PanelTop.Controls.Add(this.btnMin);
             this.PanelTop.Controls.Add(this.btnExit);
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelTop.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
             this.PanelTop.Name = "PanelTop";
-            this.PanelTop.Size = new System.Drawing.Size(998, 55);
+            this.PanelTop.Size = new System.Drawing.Size(998, 54);
             this.PanelTop.TabIndex = 0;
             // 
             // btnMin
@@ -64,7 +65,7 @@ namespace ProjectPetShop
             this.btnMin.ForeColor = System.Drawing.Color.White;
             this.btnMin.Location = new System.Drawing.Point(841, 3);
             this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(75, 51);
+            this.btnMin.Size = new System.Drawing.Size(76, 51);
             this.btnMin.TabIndex = 1;
             this.btnMin.Text = "_";
             this.btnMin.UseVisualStyleBackColor = true;
@@ -76,9 +77,9 @@ namespace ProjectPetShop
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(922, 3);
+            this.btnExit.Location = new System.Drawing.Point(923, 3);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 51);
+            this.btnExit.Size = new System.Drawing.Size(76, 51);
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "x";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -95,24 +96,24 @@ namespace ProjectPetShop
             this.PanelSide.Controls.Add(this.btnBreed);
             this.PanelSide.Controls.Add(this.btnHome);
             this.PanelSide.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelSide.Location = new System.Drawing.Point(0, 55);
+            this.PanelSide.Location = new System.Drawing.Point(0, 54);
             this.PanelSide.Name = "PanelSide";
-            this.PanelSide.Size = new System.Drawing.Size(255, 529);
+            this.PanelSide.Size = new System.Drawing.Size(255, 530);
             this.PanelSide.TabIndex = 1;
             // 
             // PanelSelect
             // 
             this.PanelSelect.BackColor = System.Drawing.Color.White;
-            this.PanelSelect.Location = new System.Drawing.Point(12, 37);
+            this.PanelSelect.Location = new System.Drawing.Point(13, 37);
             this.PanelSelect.Name = "PanelSelect";
-            this.PanelSelect.Size = new System.Drawing.Size(33, 54);
+            this.PanelSelect.Size = new System.Drawing.Size(34, 54);
             this.PanelSelect.TabIndex = 7;
             // 
             // btnClient
             // 
             this.btnClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClient.ForeColor = System.Drawing.Color.White;
-            this.btnClient.Location = new System.Drawing.Point(61, 117);
+            this.btnClient.Location = new System.Drawing.Point(62, 117);
             this.btnClient.Name = "btnClient";
             this.btnClient.Size = new System.Drawing.Size(175, 54);
             this.btnClient.TabIndex = 6;
@@ -124,7 +125,7 @@ namespace ProjectPetShop
             // 
             this.btnBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBooking.ForeColor = System.Drawing.Color.White;
-            this.btnBooking.Location = new System.Drawing.Point(61, 431);
+            this.btnBooking.Location = new System.Drawing.Point(62, 431);
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(175, 54);
             this.btnBooking.TabIndex = 4;
@@ -136,7 +137,7 @@ namespace ProjectPetShop
             // 
             this.btnAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnimal.ForeColor = System.Drawing.Color.White;
-            this.btnAnimal.Location = new System.Drawing.Point(61, 272);
+            this.btnAnimal.Location = new System.Drawing.Point(62, 271);
             this.btnAnimal.Name = "btnAnimal";
             this.btnAnimal.Size = new System.Drawing.Size(175, 54);
             this.btnAnimal.TabIndex = 3;
@@ -148,7 +149,7 @@ namespace ProjectPetShop
             // 
             this.btnService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnService.ForeColor = System.Drawing.Color.White;
-            this.btnService.Location = new System.Drawing.Point(61, 353);
+            this.btnService.Location = new System.Drawing.Point(62, 353);
             this.btnService.Name = "btnService";
             this.btnService.Size = new System.Drawing.Size(175, 54);
             this.btnService.TabIndex = 2;
@@ -160,7 +161,7 @@ namespace ProjectPetShop
             // 
             this.btnBreed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBreed.ForeColor = System.Drawing.Color.White;
-            this.btnBreed.Location = new System.Drawing.Point(61, 196);
+            this.btnBreed.Location = new System.Drawing.Point(62, 196);
             this.btnBreed.Name = "btnBreed";
             this.btnBreed.Size = new System.Drawing.Size(175, 54);
             this.btnBreed.TabIndex = 1;
@@ -172,7 +173,7 @@ namespace ProjectPetShop
             // 
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(61, 37);
+            this.btnHome.Location = new System.Drawing.Point(62, 37);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(175, 54);
             this.btnHome.TabIndex = 0;
@@ -186,9 +187,10 @@ namespace ProjectPetShop
             this.PanelCenter.BackgroundImage = global::ProjectPetShop.Properties.Resources._20150718_235853000_iOS;
             this.PanelCenter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelCenter.Location = new System.Drawing.Point(255, 55);
+            this.PanelCenter.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelCenter.Location = new System.Drawing.Point(255, 54);
             this.PanelCenter.Name = "PanelCenter";
-            this.PanelCenter.Size = new System.Drawing.Size(743, 529);
+            this.PanelCenter.Size = new System.Drawing.Size(743, 530);
             this.PanelCenter.TabIndex = 2;
             // 
             // Form1
@@ -201,7 +203,7 @@ namespace ProjectPetShop
             this.Controls.Add(this.PanelTop);
             this.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7);
+            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
