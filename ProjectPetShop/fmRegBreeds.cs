@@ -16,5 +16,20 @@ namespace ProjectPetShop
         {
             InitializeComponent();
         }
+
+        private void racaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.racaBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.petshopDataSet);
+
+        }
+
+        private void fmRegBreeds_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'petshopDataSet.raca' table. You can move, or remove it, as needed.
+            this.racaTableAdapter.Fill(this.petshopDataSet.raca);
+
+        }
     }
 }
